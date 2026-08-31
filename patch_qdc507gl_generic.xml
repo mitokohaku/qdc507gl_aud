@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<patches>
+  <patch SECTOR_SIZE_IN_BYTES="2048" byte_offset="428" filename="partition_complete_qdc507gl.mbn" physical_partition_number="0" size_in_bytes="4" start_sector="1" value="NUM_DISK_BLOCKS-479." what="Update MIBIB partition last sector size limit"/>
+  <patch SECTOR_SIZE_IN_BYTES="2048" byte_offset="12" filename="partition_complete_qdc507gl.mbn" physical_partition_number="0" size_in_bytes="4" start_sector="3" value="CRC32(0,4096)" what="Update MIBIB partition with CRC of MIBIB header sector and Syster partition sector."/>
+</patches>

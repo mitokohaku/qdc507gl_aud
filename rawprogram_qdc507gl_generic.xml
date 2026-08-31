@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<data>
+  <!--通用包: 不包含efs2/sec/machine/sys_rev/rawdata,这些跟具体芯片绑定,保持目标设备原样不动-->
+  <erase PAGES_PER_BLOCK="64" SECTOR_SIZE_IN_BYTES="2048" num_partition_sectors="640" physical_partition_number="0" start_sector="0" label="sbl"/>
+  <program PAGES_PER_BLOCK="64" SECTOR_SIZE_IN_BYTES="2048" filename="sbl.bin" num_partition_sectors="640" physical_partition_number="0" start_sector="0" label="sbl"/>
+  <erase PAGES_PER_BLOCK="64" SECTOR_SIZE_IN_BYTES="2048" num_partition_sectors="640" physical_partition_number="0" start_sector="640" label="mibib"/>
+  <program PAGES_PER_BLOCK="64" SECTOR_SIZE_IN_BYTES="2048" filename="partition_complete_qdc507gl.mbn" num_partition_sectors="640" physical_partition_number="0" start_sector="640" label="mibib"/>
+  <erase PAGES_PER_BLOCK="64" SECTOR_SIZE_IN_BYTES="2048" num_partition_sectors="768" physical_partition_number="0" start_sector="12160" label="tz"/>
+  <program PAGES_PER_BLOCK="64" SECTOR_SIZE_IN_BYTES="2048" filename="tz.bin" num_partition_sectors="768" physical_partition_number="0" start_sector="12160" label="tz"/>
+  <erase PAGES_PER_BLOCK="64" SECTOR_SIZE_IN_BYTES="2048" num_partition_sectors="320" physical_partition_number="0" start_sector="12928" label="rpm"/>
+  <program PAGES_PER_BLOCK="64" SECTOR_SIZE_IN_BYTES="2048" filename="rpm.bin" num_partition_sectors="320" physical_partition_number="0" start_sector="12928" label="rpm"/>
+  <erase PAGES_PER_BLOCK="64" SECTOR_SIZE_IN_BYTES="2048" num_partition_sectors="640" physical_partition_number="0" start_sector="13568" label="aboot"/>
+  <program PAGES_PER_BLOCK="64" SECTOR_SIZE_IN_BYTES="2048" filename="aboot.bin" num_partition_sectors="640" physical_partition_number="0" start_sector="13568" label="aboot"/>
+  <erase PAGES_PER_BLOCK="64" SECTOR_SIZE_IN_BYTES="2048" num_partition_sectors="2752" physical_partition_number="0" start_sector="14208" label="boot"/>
+  <program PAGES_PER_BLOCK="64" SECTOR_SIZE_IN_BYTES="2048" filename="boot.bin" num_partition_sectors="2752" physical_partition_number="0" start_sector="14208" label="boot"/>
+  <erase PAGES_PER_BLOCK="64" SECTOR_SIZE_IN_BYTES="2048" num_partition_sectors="256" physical_partition_number="0" start_sector="16960" label="misc"/>
+  <program PAGES_PER_BLOCK="64" SECTOR_SIZE_IN_BYTES="2048" filename="misc.bin" num_partition_sectors="256" physical_partition_number="0" start_sector="16960" label="misc"/>
+  <erase PAGES_PER_BLOCK="64" SECTOR_SIZE_IN_BYTES="2048" num_partition_sectors="2688" physical_partition_number="0" start_sector="17216" label="recoveryfs"/>
+  <program PAGES_PER_BLOCK="64" SECTOR_SIZE_IN_BYTES="2048" filename="recoveryfs.bin" num_partition_sectors="2688" physical_partition_number="0" start_sector="17216" label="recoveryfs"/>
+  <erase PAGES_PER_BLOCK="64" SECTOR_SIZE_IN_BYTES="2048" num_partition_sectors="10752" physical_partition_number="0" start_sector="19904" label="usr_data"/>
+  <program PAGES_PER_BLOCK="64" SECTOR_SIZE_IN_BYTES="2048" filename="usr_data.bin" num_partition_sectors="10752" physical_partition_number="0" start_sector="19904" label="usr_data"/>
+  <erase PAGES_PER_BLOCK="64" SECTOR_SIZE_IN_BYTES="2048" num_partition_sectors="34880" physical_partition_number="0" start_sector="30656" label="system"/>
+  <program PAGES_PER_BLOCK="64" SECTOR_SIZE_IN_BYTES="2048" filename="system.bin" num_partition_sectors="34880" physical_partition_number="0" start_sector="30656" label="system"/>
+</data>
